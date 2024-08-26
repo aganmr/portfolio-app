@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1080" height="89" viewBox="0 0 1080 89">
+  <defs>
+    <clipPath id="clip-Instagram_Story_9">
+      <rect width="1080" height="89"/>
+    </clipPath>
+  </defs>
+  <g id="Instagram_Story_9" data-name="Instagram Story – 9" clip-path="url(#clip-Instagram_Story_9)">
+    <rect width="1080" height="89" fill="#313542"/>
+    <g id="Group_79" data-name="Group 79" transform="translate(0 -7909.594)">
+      <text id="Mark_Rey_Agan" data-name="Mark Rey Agan" transform="translate(120.966 7972.094)" fill="#fba547" font-size="20" font-family="CenturyGothic, Century Gothic"><tspan x="0" y="0">Mark Rey Agan</tspan></text>
+      <g id="linkedin-1-svgrepo-com" transform="translate(62 7943.356)">
+        <rect id="Rectangle_185" data-name="Rectangle 185" width="38" height="38" rx="19" transform="translate(2 2.238)" fill="#1275b1"/>
+        <path id="Path_81" data-name="Path 81" d="M13.96,10.319a2.4,2.4,0,0,1-2.48,2.319A2.4,2.4,0,0,1,9,10.319,2.4,2.4,0,0,1,11.48,8,2.4,2.4,0,0,1,13.96,10.319Z" transform="translate(2.594 2.24)" fill="#fff"/>
+        <path id="Path_82" data-name="Path 82" d="M9.247,12.628h4.239V25.473H9.247Z" transform="translate(2.686 3.955)" fill="#fff"/>
+        <path id="Path_83" data-name="Path 83" d="M18.466,12.7H14.227V25.543h4.239V18.971c0-1.518.518-3.042,2.586-3.042,2.337,0,2.323,1.986,2.312,3.525-.014,2.011.02,4.064.02,6.09h4.239V18.764c-.036-4.329-1.164-6.323-4.875-6.323a5.258,5.258,0,0,0-4.281,1.906Z" transform="translate(4.531 3.886)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

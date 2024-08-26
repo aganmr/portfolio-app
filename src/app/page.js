@@ -1,94 +1,119 @@
+"use client"
 import Image from "next/image";
 import styles from "./page.module.css";
+import { useState, useEffect } from "react";
 
 export default function Home() {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
       <div className={styles.center}>
         <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
+          style={{ width: '100%', height: 'auto' }}
+          src="/header.svg"
+          alt="header"
+          width={0}
+          height={0}
           priority
         />
       </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
+      {/* <p>{width}</p> */}
+      <div>
+        <a href="https://github.com/markurei">
+          <Image
+            style={{ width: '100%', height: 'auto', marginTop: -10, marginBottom: -5 }}
+            src="/github_3.svg"
+            alt="github"
+            width={0}
+            height={0}
+            priority
+          />
         </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
+      </div>
+      {/* <p>{window.devicePixelRatio}</p> */}
+      <div>
+        <Image
+          style={{ width: '100%', height: 'auto' }}
+          src="/body_1.svg"
+          alt="body 1"
+          width={0}
+          height={0}
+          priority
+        />
+      </div>
+      <div>
+        <a href="https://play.google.com/store/apps/details?id=com.spingine.xeleqt.tracker&hl=en_US">
+          <Image
+            style={{ width: '100%', height: 'auto', marginTop: -12, marginBottom: -5 }}
+            src="/playstore_3.svg"
+            alt="playstore"
+            width={0}
+            height={0}
+            priority
+          />
         </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
+      </div>
+      <div>
+        <Image
+          style={{ width: '100%', height: 'auto' }} 
+          src="/body_2.svg"
+          alt="body 2"
+          width={0}
+          height={0}
+          priority
+        />
+      </div>
+      <div>
+        <a href="mailto:someone@markagan07@gmail.com">
+          <Image
+            style={{ width: '100%', height: 'auto', marginTop: -12, marginBottom: -5 }}
+            src="/gmail_1.svg"
+            alt="gmail"
+            width={0}
+            height={0}
+            priority
+          />
         </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
+      </div>
+      <div>
+        <a href="https://ph.linkedin.com/in/mark-rey-agan">
+          <Image
+            style={{ width: '100%', height: 'auto', marginTop: -5 }}
+            src="/linkedin_1.svg"
+            alt="linkedin"
+            width={0}
+            height={0}
+            priority
+          />
         </a>
+      </div>
+      {/* <div style={{ width: '100%', height: 'auto', backgroundColor: '#313542', marginTop: -5, maxWidth: '1080px', paddingTop: 4}}>
+        <a href="https://ph.linkedin.com/in/mark-rey-agan" style={{ marginLeft: 0 }}>
+          <Image
+            src="/linkedin_link.svg"
+            alt="linkedin"
+            width={width * 0.23}
+            height={23}
+            priority
+          />
+        </a>
+      </div> */}
+      <div>
+        <Image
+          style={{ width: '100%', height: 'auto',marginTop: -7 }}
+          src="/footer.svg"
+          alt="footer"
+          width={0}
+          height={0}
+          priority
+        />
       </div>
     </main>
   );
