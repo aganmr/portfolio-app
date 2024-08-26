@@ -8,7 +8,7 @@ export default function Home() {
       <div className={styles.center}>
         <Image
           style={{ width: '100%', height: 'auto' }}
-          src="/portfolio-app/public/header.svg"
+          src="/portfolio-app/header.svg"
           alt="header"
           width={0}
           height={0}
