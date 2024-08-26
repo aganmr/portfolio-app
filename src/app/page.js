@@ -1,17 +1,8 @@
 "use client"
 import Image from "next/image";
 import styles from "./page.module.css";
-import { useState, useEffect } from "react";
 
 export default function Home() {
-  const [width, setWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleResize = () => setWidth(window.innerWidth);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   return (
     <main className={styles.main}>
       <div className={styles.center}>
@@ -24,7 +15,6 @@ export default function Home() {
           priority
         />
       </div>
-      {/* <p>{width}</p> */}
       <div>
         <a href="https://github.com/markurei">
           <Image
@@ -37,7 +27,6 @@ export default function Home() {
           />
         </a>
       </div>
-      {/* <p>{window.devicePixelRatio}</p> */}
       <div>
         <Image
           style={{ width: '100%', height: 'auto' }}
